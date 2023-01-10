@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		985B480D296DBA9E00B275C6 /* Enumeration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985B480C296DBA9E00B275C6 /* Enumeration.swift */; };
+		985B480F296DC6D100B275C6 /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 985B480E296DC6D100B275C6 /* ButtonView.swift */; };
 		9886F501296CF4C800211D63 /* iOSCalculatorApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9886F500296CF4C800211D63 /* iOSCalculatorApp.swift */; };
 		9886F503296CF4C800211D63 /* CalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9886F502296CF4C800211D63 /* CalculatorView.swift */; };
 		9886F505296CF4C800211D63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9886F504296CF4C800211D63 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		985B480C296DBA9E00B275C6 /* Enumeration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enumeration.swift; sourceTree = "<group>"; };
+		985B480E296DC6D100B275C6 /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		9886F4FD296CF4C800211D63 /* iOSCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9886F500296CF4C800211D63 /* iOSCalculatorApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSCalculatorApp.swift; sourceTree = "<group>"; };
 		9886F502296CF4C800211D63 /* CalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorView.swift; sourceTree = "<group>"; };
@@ -72,6 +74,7 @@
 				9886F511296CFA0F00211D63 /* SunMoonView.swift */,
 				9886F513296CFAC400211D63 /* ComputationView.swift */,
 				985B480C296DBA9E00B275C6 /* Enumeration.swift */,
+				985B480E296DC6D100B275C6 /* ButtonView.swift */,
 			);
 			path = iOSCalculator;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			files = (
 				9886F510296CF75B00211D63 /* Color Constants.swift in Sources */,
 				9886F503296CF4C800211D63 /* CalculatorView.swift in Sources */,
+				985B480F296DC6D100B275C6 /* ButtonView.swift in Sources */,
 				9886F514296CFAC400211D63 /* ComputationView.swift in Sources */,
 				9886F516296CFC0800211D63 /* CalcsButtonView.swift in Sources */,
 				9886F512296CFA0F00211D63 /* SunMoonView.swift in Sources */,

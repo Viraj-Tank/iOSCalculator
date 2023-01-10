@@ -35,11 +35,6 @@ struct CalculatorView: View {
                     mainResult: $mainResult
                 )
                     
-                
-                Image(systemName: "globe")
-                    .imageScale(.large)
-                    .foregroundColor(.accentColor)
-                Text("Hello, world!")
             }
             .padding()
         }.environment(

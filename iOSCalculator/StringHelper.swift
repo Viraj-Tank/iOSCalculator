@@ -2,7 +2,7 @@
 import Foundation
 
 //returns last character if it exists else return empty string
-func getLastChat(str: String) -> String {
+func getLastChar(str: String) -> String {
     /*if str.isEmpty {
         return ""
     } else {
@@ -13,7 +13,7 @@ func getLastChat(str: String) -> String {
 
 // return true if last character is same as char
 func lastCharacterIsEqualTp(str: String, char: String) -> Bool {
-    let last = getLastChat(str: str)
+    let last = getLastChar(str: str)
     return last == char
 }
 
@@ -30,4 +30,16 @@ func formatResult(val: Double) -> String {
         )
     
     return result ?? "0"
+}
+
+func lastCharacterIsDigit(str: String) -> Bool {
+    return "0123456789".contains(getLastChar(str: str))
+}
+
+func lastCharacterIsDigitOrPercent(str: String) -> Bool {
+    return "0123456789%".contains(getLastChar(str: str))
+}
+
+func lastCharacterIsAnOperator(str: String) -> Bool {
+    return operators.contains(getLastChar(str: str))
 }

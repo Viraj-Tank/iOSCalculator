@@ -25,7 +25,7 @@ enum CalcButton: String {
     case decimal = "."
     case percent = "%"
     case negative = "IMGplus.forwardslash.minus"
-    case undo = "IMGarrow.counterclockwise"
+    case undo = "IMGarrowshape.backward"
 }
 
 let enumOperators: [CalcButton] = [

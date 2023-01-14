@@ -12,7 +12,7 @@ struct CalculatorView: View {
     
     var body: some View {
         
-        if(horizontal == .compact && vertical == .regular) {
+        if(horizontal == .compact && vertical == .regular || UIDevice.isIPad) {
             ZStack {
                 primaryBackground.ignoresSafeArea()
                 VStack {

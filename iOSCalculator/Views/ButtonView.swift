@@ -18,7 +18,7 @@ struct ButtonView: View {
     @Environment(\.verticalSizeClass) var vertical
     
     var buttonDim: CGFloat {
-        horizontal == .compact && vertical == .regular
+        horizontal == .compact && vertical == .regular || UIDevice.isIPad
             ? UIScreen.main.bounds.width / 5
             : UIScreen.main.bounds.height / 6
     }
@@ -35,8 +35,8 @@ struct ButtonView: View {
             Text(text ?? "")
             Image(systemName: systemImage ?? "")
         }
-        .font(.title2)
-        .fontWeight(.semibold)
+        .font(UIDevice.isIPhone ? .title2 : .title)
+        .fontWeight(UIDevice.isIPhone ? .semibold : .heavy)
         .frame(width: buttonDim,height: buttonDim)
         .foregroundColor(fgColor)
         .background(bgColor)

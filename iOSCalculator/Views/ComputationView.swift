@@ -20,7 +20,7 @@ struct ComputationView: View {
                 Spacer()
                 Text(mainResult)
                     .foregroundColor(foregroundDigits)
-                    .font(.largeTitle)
+                    .font(UIDevice.isIPad ? .largeTitle : .body)
                     .fontWeight(.bold)
                     .lineLimit(1)
             }.minimumScaleFactor(0.1)

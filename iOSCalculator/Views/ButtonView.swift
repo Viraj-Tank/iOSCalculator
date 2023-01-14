@@ -14,7 +14,14 @@ struct ButtonView: View {
         : nil
     }
     
-    let buttonDim: CGFloat = UIScreen.main.bounds.width / 5
+    @Environment(\.horizontalSizeClass) var horizontal
+    @Environment(\.verticalSizeClass) var vertical
+    
+    var buttonDim: CGFloat {
+        horizontal == .compact && vertical == .regular
+            ? UIScreen.main.bounds.width / 5
+            : UIScreen.main.bounds.height / 6
+    }
     
     var text: String? {
         let value = calcButton.rawValue
